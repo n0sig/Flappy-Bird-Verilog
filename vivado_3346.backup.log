@@ -1,0 +1,85 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jun 22 21:14:30 2021
+# Process ID: 3346
+# Current directory: /home/alexanderlake/Desktop/FlappyBird
+# Command line: vivado /home/alexanderlake/Desktop/FlappyBird/FlappyBird.xpr
+# Log file: /home/alexanderlake/Desktop/FlappyBird/vivado.log
+# Journal file: /home/alexanderlake/Desktop/FlappyBird/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/alexanderlake/Desktop/FlappyBird/FlappyBird.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/86187/Desktop/FlappyBird' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:06 . Memory (MB): peak = 7300.074 ; gain = 80.082 ; free physical = 9578 ; free virtual = 13428
+update_compile_order -fileset sources_1
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Profile.v w ]
+add_files /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Profile.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue Jun 22 22:10:40 2021] Launched synth_1...
+Run output will be captured here: /home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/runme.log
+[Tue Jun 22 22:10:40 2021] Launched impl_1...
+Run output will be captured here: /home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue Jun 22 22:14:12 2021] Launched synth_1...
+Run output will be captured here: /home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/runme.log
+[Tue Jun 22 22:14:12 2021] Launched impl_1...
+Run output will be captured here: /home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 09:50:49
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 22 22:17:20 2021...

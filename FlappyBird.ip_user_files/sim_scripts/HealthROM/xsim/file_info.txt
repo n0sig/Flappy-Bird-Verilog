@@ -1,0 +1,2 @@
+HealthROM.v,verilog,xil_defaultlib,../../../../FlappyBird.gen/sources_1/ip/HealthROM/sim/HealthROM.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

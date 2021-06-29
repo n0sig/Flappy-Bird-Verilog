@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun  3 14:31:35 2021
+# Process ID: 128446
+# Current directory: /home/alexanderlake/FPGA/FlappyBird/FlappyBird.runs/BirdROM_synth_1
+# Command line: vivado -log BirdROM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BirdROM.tcl
+# Log file: /home/alexanderlake/FPGA/FlappyBird/FlappyBird.runs/BirdROM_synth_1/BirdROM.vds
+# Journal file: /home/alexanderlake/FPGA/FlappyBird/FlappyBird.runs/BirdROM_synth_1/vivado.jou
+#-----------------------------------------------------------
+source BirdROM.tcl -notrace

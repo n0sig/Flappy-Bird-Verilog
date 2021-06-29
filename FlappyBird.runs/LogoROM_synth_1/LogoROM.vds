@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jun 22 16:12:55 2021
+# Process ID: 21968
+# Current directory: C:/Users/86187/Desktop/FlappyBird/FlappyBird.runs/LogoROM_synth_1
+# Command line: vivado.exe -log LogoROM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source LogoROM.tcl
+# Log file: C:/Users/86187/Desktop/FlappyBird/FlappyBird.runs/LogoROM_synth_1/LogoROM.vds
+# Journal file: C:/Users/86187/Desktop/FlappyBird/FlappyBird.runs/LogoROM_synth_1\vivado.jou
+#-----------------------------------------------------------
+source LogoROM.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP LogoROM, cache-ID = 17a47b15250d9c76.
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 22 16:13:04 2021...

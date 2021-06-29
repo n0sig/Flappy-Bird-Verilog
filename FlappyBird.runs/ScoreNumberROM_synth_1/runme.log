@@ -1,0 +1,15 @@
+
+*** Running vivado
+    with args -log ScoreNumberROM.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ScoreNumberROM.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source ScoreNumberROM.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1075.734 ; gain = 0.000
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP ScoreNumberROM, cache-ID = b47e5564f2fd5fc3.
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 28 21:54:11 2021...

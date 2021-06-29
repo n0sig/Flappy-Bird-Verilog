@@ -1,0 +1,150 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun 28 11:36:41 2021
+# Process ID: 17020
+# Current directory: C:/Users/yhszj/Desktop/FlappyBird
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4732 C:\Users\yhszj\Desktop\FlappyBird\FlappyBird.xpr
+# Log file: C:/Users/yhszj/Desktop/FlappyBird/vivado.log
+# Journal file: C:/Users/yhszj/Desktop/FlappyBird\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 1088.996 ; gain = 0.000
+reset_run synth_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Jun 28 11:37:18 2021] Launched synth_1...
+Run output will be captured here: C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.runs/synth_1/runme.log
+[Mon Jun 28 11:37:19 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1088.996 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2614.555 ; gain = 1525.559
+set_property PROGRAM.FILE {C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Jun 28 11:47:23 2021] Launched synth_1...
+Run output will be captured here: C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.runs/synth_1/runme.log
+[Mon Jun 28 11:47:23 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Jun 28 11:57:01 2021] Launched synth_1...
+Run output will be captured here: C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.runs/synth_1/runme.log
+[Mon Jun 28 11:57:01 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Jun 28 12:06:59 2021] Launched synth_1...
+Run output will be captured here: C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.runs/synth_1/runme.log
+[Mon Jun 28 12:06:59 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name HealthROM
+set_property -dict [list CONFIG.depth {256} CONFIG.Component_Name {HealthROM} CONFIG.memory_type {rom}] [get_ips HealthROM]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'HealthROM' to 'HealthROM' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files c:/Users/yhszj/Desktop/FlappyBird/FlappyBird.srcs/sources_1/ip/HealthROM/HealthROM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'HealthROM'...
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.coefficient_file {c:/Users/yhszj/Desktop/FlappyBird/FlappyBird.srcs/sources_1/ip/HealthROM/HealthROM.coe}] [get_ips HealthROM]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/yhszj/Desktop/FlappyBird/FlappyBird.srcs/sources_1/ip/HealthROM/HealthROM.coe' provided. It will be converted relative to IP Instance files 'HealthROM.coe'
+generate_target all [get_files  c:/Users/yhszj/Desktop/FlappyBird/FlappyBird.srcs/sources_1/ip/HealthROM/HealthROM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'HealthROM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'HealthROM'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'HealthROM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'HealthROM'...
+catch { config_ip_cache -export [get_ips -all HealthROM] }
+export_ip_user_files -of_objects [get_files c:/Users/yhszj/Desktop/FlappyBird/FlappyBird.srcs/sources_1/ip/HealthROM/HealthROM.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/yhszj/Desktop/FlappyBird/FlappyBird.srcs/sources_1/ip/HealthROM/HealthROM.xci]
+launch_runs HealthROM_synth_1 -jobs 8
+[Mon Jun 28 13:33:40 2021] Launched HealthROM_synth_1...
+Run output will be captured here: C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.runs/HealthROM_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/yhszj/Desktop/FlappyBird/FlappyBird.srcs/sources_1/ip/HealthROM/HealthROM.xci] -directory C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.ip_user_files -ipstatic_source_dir C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.cache/compile_simlib/modelsim} {questa=C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.cache/compile_simlib/questa} {riviera=C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.cache/compile_simlib/riviera} {activehdl=C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Jun 28 13:36:26 2021] Launched synth_1...
+Run output will be captured here: C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.runs/synth_1/runme.log
+[Mon Jun 28 13:36:26 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 28 13:42:35 2021...

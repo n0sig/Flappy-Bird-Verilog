@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun 28 21:53:49 2021
+# Process ID: 12136
+# Current directory: C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.runs/ScoreNumberROM_synth_1
+# Command line: vivado.exe -log ScoreNumberROM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ScoreNumberROM.tcl
+# Log file: C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.runs/ScoreNumberROM_synth_1/ScoreNumberROM.vds
+# Journal file: C:/Users/yhszj/Desktop/FlappyBird/FlappyBird.runs/ScoreNumberROM_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ScoreNumberROM.tcl -notrace

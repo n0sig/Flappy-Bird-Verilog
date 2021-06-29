@@ -1,0 +1,8 @@
+0.7
+2020.2
+Nov 18 2020
+09:20:35
+/home/alexanderlake/FPGA/FlappyBird/FlappyBird.sim/sim_1/behav/xsim/glbl.v,1618714617,verilog,,,,glbl,,,,,,,,
+/home/alexanderlake/FPGA/FlappyBird/FlappyBird.srcs/sim_1/new/tb.v,1623681160,verilog,,,,tb,,,,,,,,
+/home/alexanderlake/FPGA/FlappyBird/FlappyBird.srcs/sources_1/new/Ball.v,1622699134,verilog,,/home/alexanderlake/FPGA/FlappyBird/FlappyBird.srcs/sim_1/new/tb.v,,Ball,,,,,,,,
+/home/alexanderlake/FPGA/FlappyBird/FlappyBird.srcs/sources_1/new/Score.v,1623681076,verilog,,/home/alexanderlake/FPGA/FlappyBird/FlappyBird.srcs/sim_1/new/tb.v,,Scoring,,,,,,,,

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jun 22 16:12:55 2021
+# Process ID: 20360
+# Current directory: C:/Users/86187/Desktop/FlappyBird/FlappyBird.runs/PipeROM_synth_1
+# Command line: vivado.exe -log PipeROM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PipeROM.tcl
+# Log file: C:/Users/86187/Desktop/FlappyBird/FlappyBird.runs/PipeROM_synth_1/PipeROM.vds
+# Journal file: C:/Users/86187/Desktop/FlappyBird/FlappyBird.runs/PipeROM_synth_1\vivado.jou
+#-----------------------------------------------------------
+source PipeROM.tcl -notrace

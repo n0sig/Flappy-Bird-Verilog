@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun 28 23:51:55 2021
+# Process ID: 1956
+# Current directory: /home/alexanderlake/Desktop/FlappyBird
+# Command line: vivado /home/alexanderlake/Desktop/FlappyBird/FlappyBird.xpr
+# Log file: /home/alexanderlake/Desktop/FlappyBird/vivado.log
+# Journal file: /home/alexanderlake/Desktop/FlappyBird/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/alexanderlake/Desktop/FlappyBird/FlappyBird.xpr
+update_compile_order -fileset sources_1
+generate_target all [get_files  /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/ip/BackgroundROMNight/BackgroundROMNight.xci]
+catch { config_ip_cache -export [get_ips -all BackgroundROMNight] }
+export_ip_user_files -of_objects [get_files /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/ip/BackgroundROMNight/BackgroundROMNight.xci] -no_script -sync -force -quiet
+launch_runs BackgroundROMNight_synth_1 -jobs 8
+wait_on_run BackgroundROMNight_synth_1
+export_simulation -of_objects [get_files /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/ip/BackgroundROMNight/BackgroundROMNight.xci] -directory /home/alexanderlake/Desktop/FlappyBird/FlappyBird.ip_user_files/sim_scripts -ip_user_files_dir /home/alexanderlake/Desktop/FlappyBird/FlappyBird.ip_user_files -ipstatic_source_dir /home/alexanderlake/Desktop/FlappyBird/FlappyBird.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/alexanderlake/Desktop/FlappyBird/FlappyBird.cache/compile_simlib/modelsim} {questa=/home/alexanderlake/Desktop/FlappyBird/FlappyBird.cache/compile_simlib/questa} {ies=/home/alexanderlake/Desktop/FlappyBird/FlappyBird.cache/compile_simlib/ies} {xcelium=/home/alexanderlake/Desktop/FlappyBird/FlappyBird.cache/compile_simlib/xcelium} {vcs=/home/alexanderlake/Desktop/FlappyBird/FlappyBird.cache/compile_simlib/vcs} {riviera=/home/alexanderlake/Desktop/FlappyBird/FlappyBird.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+add_files -norecurse {/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/uart_tx.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/BackgroundRenderer.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/ControlMux.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/VGADisplay.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/bgm.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/uart_rx.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Logic.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Score.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/clkdiv.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/LayerMixer.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/BonusRenderer.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Pipe.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/DataGenerator.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/PipeRenderer.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/soundeffect.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Ball.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/DeBounce.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Decoder.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Profile.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/data_processing.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/main.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/OverlayRenderer.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Bonus.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/MEMS.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/jump.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Display32Bit.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/clkrim.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/getgoal.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/jumpsound.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/InputProcessor.v}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/getgoal.v] -no_script -reset -force -quiet
+remove_files  /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/getgoal.v
+export_ip_user_files -of_objects  [get_files /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/jumpsound.v] -no_script -reset -force -quiet
+remove_files  /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/jumpsound.v
+file delete -force /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/jumpsound.v
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run synth_1 -name synth_1

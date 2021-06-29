@@ -1,0 +1,2 @@
+SettingROM.v,verilog,xil_defaultlib,../../../../FlappyBird.gen/sources_1/ip/SettingROM/sim/SettingROM.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

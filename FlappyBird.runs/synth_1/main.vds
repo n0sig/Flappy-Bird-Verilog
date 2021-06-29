@@ -1,0 +1,677 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jun 29 09:12:45 2021
+# Process ID: 81028
+# Current directory: /home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1
+# Command line: vivado -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: /home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/main.vds
+# Journal file: /home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace
+Command: synth_design -top main -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 81048
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2307.855 ; gain = 0.000 ; free physical = 6772 ; free virtual = 10481
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/main.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bgm' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/bgm.v:23]
+	Parameter L1 bound to: 478 - type: integer 
+	Parameter L2 bound to: 3401 - type: integer 
+	Parameter L3 bound to: 3034 - type: integer 
+	Parameter L4 bound to: 2864 - type: integer 
+	Parameter L5 bound to: 2551 - type: integer 
+	Parameter L6 bound to: 2723 - type: integer 
+	Parameter L7 bound to: 2024 - type: integer 
+	Parameter M1 bound to: 1911 - type: integer 
+	Parameter M2 bound to: 1703 - type: integer 
+	Parameter M3 bound to: 1517 - type: integer 
+	Parameter M4 bound to: 1432 - type: integer 
+	Parameter M5 bound to: 1276 - type: integer 
+	Parameter M6 bound to: 1136 - type: integer 
+	Parameter M7 bound to: 1012 - type: integer 
+	Parameter H1 bound to: 956 - type: integer 
+	Parameter H2 bound to: 851 - type: integer 
+	Parameter H3 bound to: 758 - type: integer 
+	Parameter H4 bound to: 716 - type: integer 
+	Parameter H5 bound to: 638 - type: integer 
+	Parameter H6 bound to: 568 - type: integer 
+	Parameter H7 bound to: 506 - type: integer 
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clkdiv' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/clkdiv.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clkdiv' (1#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/clkdiv.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clkrim' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/clkrim.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clkrim' (2#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/clkrim.v:23]
+INFO: [Synth 8-6157] synthesizing module 'soundeffect' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/soundeffect.v:2]
+	Parameter L1 bound to: 3823 - type: integer 
+	Parameter L2 bound to: 3401 - type: integer 
+	Parameter L3 bound to: 3034 - type: integer 
+	Parameter L4 bound to: 2864 - type: integer 
+	Parameter L5 bound to: 2551 - type: integer 
+	Parameter L6 bound to: 2723 - type: integer 
+	Parameter L7 bound to: 2024 - type: integer 
+	Parameter M1 bound to: 1911 - type: integer 
+	Parameter M2 bound to: 1703 - type: integer 
+	Parameter M3 bound to: 1517 - type: integer 
+	Parameter M4 bound to: 1432 - type: integer 
+	Parameter M5 bound to: 1276 - type: integer 
+	Parameter M6 bound to: 1136 - type: integer 
+	Parameter M7 bound to: 1012 - type: integer 
+	Parameter H1 bound to: 956 - type: integer 
+	Parameter H2 bound to: 851 - type: integer 
+	Parameter H3 bound to: 758 - type: integer 
+	Parameter H4 bound to: 716 - type: integer 
+	Parameter H5 bound to: 638 - type: integer 
+	Parameter H6 bound to: 568 - type: integer 
+	Parameter H7 bound to: 506 - type: integer 
+	Parameter None bound to: 1000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'soundeffect' (3#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/soundeffect.v:2]
+INFO: [Synth 8-6157] synthesizing module 'jump' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/jump.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'jump' (4#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/jump.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/bgm.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'bgm' (5#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/bgm.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MEMS' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/MEMS.v:22]
+	Parameter CLK_HZ bound to: 100000000 - type: integer 
+	Parameter BIT_RATE bound to: 115200 - type: integer 
+	Parameter PAYLOAD_BITS bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/uart_rx.v:27]
+	Parameter BIT_RATE bound to: 115200 - type: integer 
+	Parameter BIT_P bound to: 8680 - type: integer 
+	Parameter CLK_HZ bound to: 100000000 - type: integer 
+	Parameter CLK_P bound to: 10 - type: integer 
+	Parameter PAYLOAD_BITS bound to: 8 - type: integer 
+	Parameter STOP_BITS bound to: 1 - type: integer 
+	Parameter CYCLES_PER_BIT bound to: 868 - type: integer 
+	Parameter COUNT_REG_LEN bound to: 11 - type: integer 
+	Parameter FSM_IDLE bound to: 0 - type: integer 
+	Parameter FSM_START bound to: 1 - type: integer 
+	Parameter FSM_RECV bound to: 2 - type: integer 
+	Parameter FSM_STOP bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (6#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/uart_rx.v:27]
+INFO: [Synth 8-6157] synthesizing module 'data_processing' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/data_processing.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_processing' (7#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/data_processing.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MEMS' (8#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/MEMS.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ButtonProcessor' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/InputProcessor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DeBounce' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/DeBounce.v:23]
+	Parameter IsPressed bound to: 650000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'DeBounce' (9#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/DeBounce.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ButtonProcessor' (10#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/InputProcessor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ControlMux' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/ControlMux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ControlMux' (11#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/ControlMux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Bird' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Ball.v:23]
+	Parameter StateRunning bound to: 4'b0000 
+	Parameter StatePause bound to: 4'b0001 
+	Parameter StateWelcome bound to: 4'b0010 
+	Parameter StateGameOver bound to: 4'b0011 
+	Parameter StateFromWelcomeToRunning bound to: 4'b0100 
+	Parameter StateFromRunningToGameOver bound to: 4'b0101 
+	Parameter Accelerate bound to: 48'b000000000000000000000101111101011110000100000000 
+	Parameter Timebase bound to: 48'b000000000000000000000000000110010110101111010000 
+INFO: [Synth 8-6155] done synthesizing module 'Bird' (12#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Ball.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Pipe' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Pipe.v:23]
+	Parameter StateRunning bound to: 4'b0000 
+	Parameter StatePause bound to: 4'b0001 
+	Parameter StateWelcome bound to: 4'b0010 
+	Parameter StateGameOver bound to: 4'b0011 
+	Parameter StateFromWelcomeToRunning bound to: 4'b0100 
+	Parameter StateFromRunningToGameOver bound to: 4'b0101 
+INFO: [Synth 8-6155] done synthesizing module 'Pipe' (13#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Pipe.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Bonus' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Bonus.v:23]
+	Parameter StateRunning bound to: 4'b0000 
+	Parameter StatePause bound to: 4'b0001 
+	Parameter StateWelcome bound to: 4'b0010 
+	Parameter StateGameOver bound to: 4'b0011 
+	Parameter StateFromWelcomeToRunning bound to: 4'b0100 
+	Parameter StateFromRunningToGameOver bound to: 4'b0101 
+	Parameter StateSetting bound to: 4'b0110 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Bonus.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'Bonus' (14#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Bonus.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Scoring' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Score.v:23]
+	Parameter StateRunning bound to: 4'b0000 
+	Parameter StatePause bound to: 4'b0001 
+	Parameter StateWelcome bound to: 4'b0010 
+	Parameter StateGameOver bound to: 4'b0011 
+	Parameter StateFromWelcomeToRunning bound to: 4'b0100 
+	Parameter StateFromRunningToGameOver bound to: 4'b0101 
+INFO: [Synth 8-6155] done synthesizing module 'Scoring' (15#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Score.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Setting' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Profile.v:23]
+	Parameter MaxItem bound to: 3 - type: integer 
+	Parameter ITEM_CTRLSELECT bound to: 0 - type: integer 
+	Parameter ITEM_ROLLINGSPEED bound to: 1 - type: integer 
+	Parameter ITEM_SKINSELECT bound to: 2 - type: integer 
+	Parameter ITEM_BGSELECT bound to: 3 - type: integer 
+	Parameter ITEM_GAMEMODE bound to: 4 - type: integer 
+	Parameter StateRunning bound to: 4'b0000 
+	Parameter StatePause bound to: 4'b0001 
+	Parameter StateWelcome bound to: 4'b0010 
+	Parameter StateGameOver bound to: 4'b0011 
+	Parameter StateFromWelcomeToRunning bound to: 4'b0100 
+	Parameter StateFromRunningToGameOver bound to: 4'b0101 
+	Parameter StateSetting bound to: 4'b0110 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Profile.v:86]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Profile.v:103]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Profile.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'Setting' (16#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Profile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MainFSM' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Logic.v:23]
+	Parameter StateRunning bound to: 4'b0000 
+	Parameter StatePause bound to: 4'b0001 
+	Parameter StateWelcome bound to: 4'b0010 
+	Parameter StateGameOver bound to: 4'b0011 
+	Parameter StateFromWelcomeToRunning bound to: 4'b0100 
+	Parameter StateFromRunningToGameOver bound to: 4'b0101 
+	Parameter StateSetting bound to: 4'b0110 
+INFO: [Synth 8-6155] done synthesizing module 'MainFSM' (17#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Logic.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BackgroundRenderer' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/BackgroundRenderer.v:23]
+	Parameter StateRunning bound to: 4'b0000 
+	Parameter StatePause bound to: 4'b0001 
+	Parameter StateWelcome bound to: 4'b0010 
+	Parameter StateGameOver bound to: 4'b0011 
+	Parameter StateFromWelcomeToRunning bound to: 4'b0100 
+	Parameter StateFromRunningToGameOver bound to: 4'b0101 
+INFO: [Synth 8-6157] synthesizing module 'BackgroundROM' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/.Xil/Vivado-81028-Xiaoxin-Air14-IKBR/realtime/BackgroundROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'BackgroundROM' (18#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/.Xil/Vivado-81028-Xiaoxin-Air14-IKBR/realtime/BackgroundROM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'BackgroundROMNight' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/.Xil/Vivado-81028-Xiaoxin-Air14-IKBR/realtime/BackgroundROMNight_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'BackgroundROMNight' (19#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/.Xil/Vivado-81028-Xiaoxin-Air14-IKBR/realtime/BackgroundROMNight_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'BackgroundRenderer' (20#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/BackgroundRenderer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BirdRenderer' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/DataGenerator.v:23]
+	Parameter StateRunning bound to: 4'b0000 
+	Parameter StatePause bound to: 4'b0001 
+	Parameter StateWelcome bound to: 4'b0010 
+	Parameter StateGameOver bound to: 4'b0011 
+	Parameter StateFromWelcomeToRunning bound to: 4'b0100 
+	Parameter StateFromRunningToGameOver bound to: 4'b0101 
+INFO: [Synth 8-6157] synthesizing module 'BirdROM' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/.Xil/Vivado-81028-Xiaoxin-Air14-IKBR/realtime/BirdROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'BirdROM' (21#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/.Xil/Vivado-81028-Xiaoxin-Air14-IKBR/realtime/BirdROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'BirdRenderer' (22#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/DataGenerator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PipeRenderer' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/PipeRenderer.v:23]
+	Parameter StateRunning bound to: 4'b0000 
+	Parameter StatePause bound to: 4'b0001 
+	Parameter StateWelcome bound to: 4'b0010 
+	Parameter StateGameOver bound to: 4'b0011 
+	Parameter StateFromWelcomeToRunning bound to: 4'b0100 
+	Parameter StateFromRunningToGameOver bound to: 4'b0101 
+	Parameter Clearance bound to: 10'b0001100000 
+INFO: [Synth 8-6157] synthesizing module 'PipeROM' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/.Xil/Vivado-81028-Xiaoxin-Air14-IKBR/realtime/PipeROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'PipeROM' (23#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/.Xil/Vivado-81028-Xiaoxin-Air14-IKBR/realtime/PipeROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'PipeRenderer' (24#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/PipeRenderer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BonusRenderer' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/BonusRenderer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SpeedUpROM' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/.Xil/Vivado-81028-Xiaoxin-Air14-IKBR/realtime/SpeedUpROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'SpeedUpROM' (25#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/.Xil/Vivado-81028-Xiaoxin-Air14-IKBR/realtime/SpeedUpROM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'HealthROM' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/.Xil/Vivado-81028-Xiaoxin-Air14-IKBR/realtime/HealthROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'HealthROM' (26#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/.Xil/Vivado-81028-Xiaoxin-Air14-IKBR/realtime/HealthROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'BonusRenderer' (27#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/BonusRenderer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'OverlayRenderer' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/OverlayRenderer.v:23]
+	Parameter StateRunning bound to: 4'b0000 
+	Parameter StatePause bound to: 4'b0001 
+	Parameter StateWelcome bound to: 4'b0010 
+	Parameter StateGameOver bound to: 4'b0011 
+	Parameter StateFromWelcomeToRunning bound to: 4'b0100 
+	Parameter StateFromRunningToGameOver bound to: 4'b0101 
+	Parameter StateSetting bound to: 4'b0110 
+INFO: [Synth 8-6157] synthesizing module 'LogoROM' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/.Xil/Vivado-81028-Xiaoxin-Air14-IKBR/realtime/LogoROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'LogoROM' (28#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/.Xil/Vivado-81028-Xiaoxin-Air14-IKBR/realtime/LogoROM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'SettingROM' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/.Xil/Vivado-81028-Xiaoxin-Air14-IKBR/realtime/SettingROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'SettingROM' (29#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/.Xil/Vivado-81028-Xiaoxin-Air14-IKBR/realtime/SettingROM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'NumberROM' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/.Xil/Vivado-81028-Xiaoxin-Air14-IKBR/realtime/NumberROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'NumberROM' (30#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/.Xil/Vivado-81028-Xiaoxin-Air14-IKBR/realtime/NumberROM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ScoreboardROM' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/.Xil/Vivado-81028-Xiaoxin-Air14-IKBR/realtime/ScoreboardROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ScoreboardROM' (31#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/.Xil/Vivado-81028-Xiaoxin-Air14-IKBR/realtime/ScoreboardROM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ScoreNumberROM' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/.Xil/Vivado-81028-Xiaoxin-Air14-IKBR/realtime/ScoreNumberROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ScoreNumberROM' (32#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/.Xil/Vivado-81028-Xiaoxin-Air14-IKBR/realtime/ScoreNumberROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'OverlayRenderer' (33#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/OverlayRenderer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LayerMixer' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/LayerMixer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LayerMixer' (34#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/LayerMixer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'VGADisplay' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/VGADisplay.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VGADisplay' (35#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/VGADisplay.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Display32Bit' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Display32Bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Decoder' [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder' (36#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Display32Bit' (37#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Display32Bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'main' (38#1) [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/main.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2307.855 ; gain = 0.000 ; free physical = 7510 ; free virtual = 11219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2307.855 ; gain = 0.000 ; free physical = 7550 ; free virtual = 11260
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2307.855 ; gain = 0.000 ; free physical = 7550 ; free virtual = 11260
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2307.855 ; gain = 0.000 ; free physical = 7543 ; free virtual = 11253
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/HealthROM/HealthROM/HealthROM_in_context.xdc] for cell 'BonusRenderer/nolabel_line48'
+Finished Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/HealthROM/HealthROM/HealthROM_in_context.xdc] for cell 'BonusRenderer/nolabel_line48'
+Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/BirdROM/BirdROM/BirdROM_in_context.xdc] for cell 'BirdRenderer/BirdROM'
+Finished Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/BirdROM/BirdROM/BirdROM_in_context.xdc] for cell 'BirdRenderer/BirdROM'
+Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/LogoROM/LogoROM/LogoROM_in_context.xdc] for cell 'OverlayRenderer/LogoROM'
+Finished Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/LogoROM/LogoROM/LogoROM_in_context.xdc] for cell 'OverlayRenderer/LogoROM'
+Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/BackgroundROM/BackgroundROM/BackgroundROM_in_context.xdc] for cell 'BackgroundRenderer/nolabel_line60'
+Finished Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/BackgroundROM/BackgroundROM/BackgroundROM_in_context.xdc] for cell 'BackgroundRenderer/nolabel_line60'
+Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/PipeROM/PipeROM/PipeROM_in_context.xdc] for cell 'PipeRenderer/PipeROM'
+Finished Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/PipeROM/PipeROM/PipeROM_in_context.xdc] for cell 'PipeRenderer/PipeROM'
+Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/NumberROM/NumberROM/NumberROM_in_context.xdc] for cell 'OverlayRenderer/NumberROM'
+Finished Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/NumberROM/NumberROM/NumberROM_in_context.xdc] for cell 'OverlayRenderer/NumberROM'
+Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/ScoreNumberROM/ScoreNumberROM/ScoreNumberROM_in_context.xdc] for cell 'OverlayRenderer/ScoreNumberROM'
+Finished Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/ScoreNumberROM/ScoreNumberROM/ScoreNumberROM_in_context.xdc] for cell 'OverlayRenderer/ScoreNumberROM'
+Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/SpeedUpROM/SpeedUpROM/SpeedUpROM_in_context.xdc] for cell 'BonusRenderer/nolabel_line41'
+Finished Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/SpeedUpROM/SpeedUpROM/SpeedUpROM_in_context.xdc] for cell 'BonusRenderer/nolabel_line41'
+Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/SettingROM/SettingROM/SettingROM_in_context.xdc] for cell 'OverlayRenderer/SettingROM'
+Finished Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/SettingROM/SettingROM/SettingROM_in_context.xdc] for cell 'OverlayRenderer/SettingROM'
+Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/ScoreboardROM/ScoreboardROM/ScoreboardROM_in_context.xdc] for cell 'OverlayRenderer/ScoreboardROM'
+Finished Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/ScoreboardROM/ScoreboardROM/ScoreboardROM_in_context.xdc] for cell 'OverlayRenderer/ScoreboardROM'
+Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/BackgroundROMNight/BackgroundROMNight/BackgroundROMNight_in_context.xdc] for cell 'BackgroundRenderer/nolabel_line66'
+Finished Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/BackgroundROMNight/BackgroundROMNight/BackgroundROMNight_in_context.xdc] for cell 'BackgroundRenderer/nolabel_line66'
+Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2371.668 ; gain = 0.000 ; free physical = 7447 ; free virtual = 11157
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2371.668 ; gain = 0.000 ; free physical = 7447 ; free virtual = 11156
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2371.668 ; gain = 63.812 ; free physical = 7525 ; free virtual = 11234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2371.668 ; gain = 63.812 ; free physical = 7525 ; free virtual = 11234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for BonusRenderer/nolabel_line48. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for BirdRenderer/BirdROM. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OverlayRenderer/LogoROM. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for BackgroundRenderer/nolabel_line60. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PipeRenderer/PipeROM. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OverlayRenderer/NumberROM. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OverlayRenderer/ScoreNumberROM. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for BonusRenderer/nolabel_line41. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OverlayRenderer/SettingROM. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OverlayRenderer/ScoreboardROM. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for BackgroundRenderer/nolabel_line66. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2371.668 ; gain = 63.812 ; free physical = 7525 ; free virtual = 11234
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_state_reg' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                FSM_IDLE |                               00 |                              000
+               FSM_START |                               11 |                              001
+                FSM_RECV |                               10 |                              010
+                FSM_STOP |                               01 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_state_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2371.668 ; gain = 63.812 ; free physical = 7514 ; free virtual = 11224
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   48 Bit       Adders := 2     
+	   3 Input   48 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 2     
+	   3 Input   12 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 9     
+	   3 Input   11 Bit       Adders := 8     
+	   3 Input   10 Bit       Adders := 30    
+	   2 Input   10 Bit       Adders := 27    
+	   2 Input    8 Bit       Adders := 2     
+	   3 Input    8 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 7     
+	   2 Input    2 Bit       Adders := 7     
+	   2 Input    1 Bit       Adders := 4     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 2     
++---Registers : 
+	              128 Bit    Registers := 1     
+	              100 Bit    Registers := 1     
+	               48 Bit    Registers := 2     
+	               19 Bit    Registers := 3     
+	               16 Bit    Registers := 7     
+	               14 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 17    
+	                8 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 40    
++---Multipliers : 
+	              11x48  Multipliers := 1     
+	              32x32  Multipliers := 2     
++---Muxes : 
+	   2 Input   48 Bit        Muxes := 7     
+	   4 Input   48 Bit        Muxes := 2     
+	 149 Input   19 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 14    
+	   2 Input   15 Bit        Muxes := 2     
+	   7 Input   14 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 2     
+	   4 Input   11 Bit        Muxes := 3     
+	   2 Input   10 Bit        Muxes := 18    
+	   4 Input   10 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 3     
+	   4 Input    4 Bit        Muxes := 4     
+	   2 Input    3 Bit        Muxes := 5     
+	   5 Input    3 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 7     
+	   4 Input    2 Bit        Muxes := 2     
+	   5 Input    2 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 68    
+	 149 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 15    
+	   3 Input    1 Bit        Muxes := 9     
+	   5 Input    1 Bit        Muxes := 5     
+	   7 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP CurrentNightROMAddress0, operation Mode is: (D+(A:0x3fffff06))*(B:0x280).
+DSP Report: operator CurrentNightROMAddress0 is absorbed into DSP CurrentNightROMAddress0.
+DSP Report: operator CurrentNightROMAddress1 is absorbed into DSP CurrentNightROMAddress0.
+DSP Report: Generating DSP CurrentNightROMAddress, operation Mode is: PCIN+A:B+C.
+DSP Report: operator CurrentNightROMAddress is absorbed into DSP CurrentNightROMAddress.
+DSP Report: Generating DSP CurrentROMAddress0, operation Mode is: (D+(A:0x3fffff10))*(B:0x280).
+DSP Report: operator CurrentROMAddress0 is absorbed into DSP CurrentROMAddress0.
+DSP Report: operator CurrentROMAddress1 is absorbed into DSP CurrentROMAddress0.
+DSP Report: Generating DSP CurrentROMAddress, operation Mode is: PCIN+A:B+C.
+DSP Report: operator CurrentROMAddress is absorbed into DSP CurrentROMAddress.
+DSP Report: Generating DSP CurrentROMAddress1, operation Mode is: (A:0x30)*B.
+DSP Report: operator CurrentROMAddress1 is absorbed into DSP CurrentROMAddress1.
+DSP Report: Generating DSP CurrentROMAddress, operation Mode is: PCIN+(A:0x1b00)*B.
+DSP Report: operator CurrentROMAddress is absorbed into DSP CurrentROMAddress.
+DSP Report: operator CurrentROMAddress0 is absorbed into DSP CurrentROMAddress.
+DSP Report: Generating DSP CurrentROMAddress, operation Mode is: PCIN+(D+(A:0xc))*(B:0x90).
+DSP Report: operator CurrentROMAddress is absorbed into DSP CurrentROMAddress.
+DSP Report: operator CurrentROMAddress2 is absorbed into DSP CurrentROMAddress.
+DSP Report: operator CurrentROMAddress3 is absorbed into DSP CurrentROMAddress.
+DSP Report: Generating DSP CurrentROMAddress, operation Mode is: PCIN+(A:0x0):B+(C:0x5).
+DSP Report: operator CurrentROMAddress is absorbed into DSP CurrentROMAddress.
+DSP Report: Generating DSP CurrentROMAddress_reg, operation Mode is: C+A*(B:0x1a).
+DSP Report: register CurrentROMAddress_reg is absorbed into DSP CurrentROMAddress_reg.
+DSP Report: operator CurrentROMAddress0 is absorbed into DSP CurrentROMAddress_reg.
+DSP Report: operator p_0_out is absorbed into DSP CurrentROMAddress_reg.
+DSP Report: Generating DSP RenderDot1, operation Mode is: A*B.
+DSP Report: operator RenderDot1 is absorbed into DSP RenderDot1.
+DSP Report: operator RenderDot1 is absorbed into DSP RenderDot1.
+DSP Report: Generating DSP RenderDot1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator RenderDot1 is absorbed into DSP RenderDot1.
+DSP Report: operator RenderDot1 is absorbed into DSP RenderDot1.
+DSP Report: Generating DSP RenderDot1, operation Mode is: A*B.
+DSP Report: operator RenderDot1 is absorbed into DSP RenderDot1.
+DSP Report: operator RenderDot1 is absorbed into DSP RenderDot1.
+DSP Report: Generating DSP RenderDot1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator RenderDot1 is absorbed into DSP RenderDot1.
+DSP Report: operator RenderDot1 is absorbed into DSP RenderDot1.
+DSP Report: Generating DSP RenderDot1, operation Mode is: A*B.
+DSP Report: operator RenderDot1 is absorbed into DSP RenderDot1.
+DSP Report: operator RenderDot1 is absorbed into DSP RenderDot1.
+DSP Report: Generating DSP RenderDot1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator RenderDot1 is absorbed into DSP RenderDot1.
+DSP Report: operator RenderDot1 is absorbed into DSP RenderDot1.
+DSP Report: Generating DSP RenderDot1, operation Mode is: A*B.
+DSP Report: operator RenderDot1 is absorbed into DSP RenderDot1.
+DSP Report: operator RenderDot1 is absorbed into DSP RenderDot1.
+DSP Report: Generating DSP RenderDot1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator RenderDot1 is absorbed into DSP RenderDot1.
+DSP Report: operator RenderDot1 is absorbed into DSP RenderDot1.
+DSP Report: Generating DSP CurrentLogoROMAddress, operation Mode is: C+A*(B:0xb4).
+DSP Report: operator CurrentLogoROMAddress is absorbed into DSP CurrentLogoROMAddress.
+DSP Report: operator CurrentLogoROMAddress0 is absorbed into DSP CurrentLogoROMAddress.
+DSP Report: Generating DSP CurrentSettingROMAddress, operation Mode is: C+A*(B:0xf0).
+DSP Report: operator CurrentSettingROMAddress is absorbed into DSP CurrentSettingROMAddress.
+DSP Report: operator CurrentSettingROMAddress0 is absorbed into DSP CurrentSettingROMAddress.
+DSP Report: Generating DSP CurrentNumberRomAddress2, operation Mode is: A*(B:0x18).
+DSP Report: operator CurrentNumberRomAddress2 is absorbed into DSP CurrentNumberRomAddress2.
+DSP Report: Generating DSP p_0_out, operation Mode is: C+(A:0x420)*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: PCIN+(A:0x0):B+C.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP CurrentScoreboardROMAddress, operation Mode is: C+A*(B:0xf0).
+DSP Report: operator CurrentScoreboardROMAddress is absorbed into DSP CurrentScoreboardROMAddress.
+DSP Report: operator CurrentSettingROMAddress0 is absorbed into DSP CurrentScoreboardROMAddress.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2371.668 ; gain = 63.812 ; free physical = 7472 ; free virtual = 11189
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++-------------------+------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name        | DSP Mapping                  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------+------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|BackgroundRenderer | (D+(A:0x3fffff06))*(B:0x280) | 16     | 10     | -      | 10     | 26     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|BackgroundRenderer | PCIN+A:B+C                   | 30     | 18     | 10     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|BackgroundRenderer | (D+(A:0x3fffff10))*(B:0x280) | 17     | 10     | -      | 10     | 27     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|BackgroundRenderer | PCIN+A:B+C                   | 30     | 18     | 10     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|BirdRenderer       | (A:0x30)*B                   | 2      | 6      | -      | -      | 8      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|BirdRenderer       | PCIN+(A:0x1b00)*B            | 13     | 3      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|BirdRenderer       | PCIN+(D+(A:0xc))*(B:0x90)    | 4      | 8      | -      | 10     | 15     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|BirdRenderer       | PCIN+(A:0x0):B+(C:0x5)       | 30     | 10     | 3      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|PipeRenderer       | C+A*(B:0x1a)                 | 10     | 5      | 10     | -      | 14     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|OverlayRenderer    | A*B                          | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|OverlayRenderer    | (PCIN>>17)+A*B               | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|OverlayRenderer    | A*B                          | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|OverlayRenderer    | (PCIN>>17)+A*B               | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|OverlayRenderer    | A*B                          | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|OverlayRenderer    | (PCIN>>17)+A*B               | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|OverlayRenderer    | A*B                          | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|OverlayRenderer    | (PCIN>>17)+A*B               | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|OverlayRenderer    | C+A*(B:0xb4)                 | 10     | 8      | 10     | -      | 14     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|OverlayRenderer    | C+A*(B:0xf0)                 | 10     | 8      | 10     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|OverlayRenderer    | A*(B:0x18)                   | 10     | 5      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|OverlayRenderer    | C+(A:0x420)*B                | 8      | 11     | 14     | -      | 14     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|OverlayRenderer    | PCIN+(A:0x0):B+C             | 30     | 10     | 10     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|OverlayRenderer    | C+A*(B:0xf0)                 | 10     | 8      | 10     | -      | 15     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++-------------------+------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2371.668 ; gain = 63.812 ; free physical = 7306 ; free virtual = 11023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2371.668 ; gain = 63.812 ; free physical = 7301 ; free virtual = 11017
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 2371.668 ; gain = 63.812 ; free physical = 7289 ; free virtual = 11006
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2371.668 ; gain = 63.812 ; free physical = 7288 ; free virtual = 11005
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2371.668 ; gain = 63.812 ; free physical = 7288 ; free virtual = 11005
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 2371.668 ; gain = 63.812 ; free physical = 7288 ; free virtual = 11005
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 2371.668 ; gain = 63.812 ; free physical = 7288 ; free virtual = 11005
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 2371.668 ; gain = 63.812 ; free physical = 7288 ; free virtual = 11005
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 2371.668 ; gain = 63.812 ; free physical = 7288 ; free virtual = 11005
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                   | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|main        | MEMS/data/data_reg[55]     | 7      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|main        | Pipe/PipeYPosition_reg[49] | 4      | 10    | NO           | NO                 | YES               | 10     | 0       | 
++------------+----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------+----------+
+|      |BlackBox name      |Instances |
++------+-------------------+----------+
+|1     |BackgroundROM      |         1|
+|2     |BackgroundROMNight |         1|
+|3     |BirdROM            |         1|
+|4     |SpeedUpROM         |         1|
+|5     |HealthROM          |         1|
+|6     |LogoROM            |         1|
+|7     |SettingROM         |         1|
+|8     |NumberROM          |         1|
+|9     |ScoreboardROM      |         1|
+|10    |ScoreNumberROM     |         1|
+|11    |PipeROM            |         1|
++------+-------------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |BackgroundROM      |     1|
+|2     |BackgroundROMNight |     1|
+|3     |BirdROM            |     1|
+|4     |HealthROM          |     1|
+|5     |LogoROM            |     1|
+|6     |NumberROM          |     1|
+|7     |PipeROM            |     1|
+|8     |ScoreNumberROM     |     1|
+|9     |ScoreboardROM      |     1|
+|10    |SettingROM         |     1|
+|11    |SpeedUpROM         |     1|
+|12    |BUFG               |     5|
+|13    |CARRY4             |   738|
+|14    |DSP48E1            |    21|
+|21    |LUT1               |   233|
+|22    |LUT2               |  1101|
+|23    |LUT3               |   859|
+|24    |LUT4               |   932|
+|25    |LUT5               |   506|
+|26    |LUT6               |   804|
+|27    |MUXF7              |     8|
+|28    |MUXF8              |     4|
+|29    |SRL16E             |    18|
+|30    |FDRE               |   849|
+|31    |FDSE               |    62|
+|32    |IBUF               |     8|
+|33    |OBUF               |    48|
++------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 2371.668 ; gain = 63.812 ; free physical = 7288 ; free virtual = 11005
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 2371.668 ; gain = 0.000 ; free physical = 7347 ; free virtual = 11064
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 2371.668 ; gain = 63.812 ; free physical = 7347 ; free virtual = 11064
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2371.668 ; gain = 0.000 ; free physical = 7432 ; free virtual = 11149
+INFO: [Netlist 29-17] Analyzing 771 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2399.551 ; gain = 0.000 ; free physical = 7378 ; free virtual = 11096
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+98 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:49 . Memory (MB): peak = 2399.551 ; gain = 91.914 ; free physical = 7567 ; free virtual = 11281
+INFO: [Common 17-1381] The checkpoint '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 29 09:13:46 2021...

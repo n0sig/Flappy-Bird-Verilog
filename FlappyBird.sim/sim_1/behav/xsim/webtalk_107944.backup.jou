@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun  3 13:24:46 2021
+# Process ID: 107944
+# Current directory: /home/alexanderlake/FPGA/FlappyBird/FlappyBird.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/alexanderlake/FPGA/FlappyBird/FlappyBird.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/alexanderlake/FPGA/FlappyBird/FlappyBird.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/alexanderlake/FPGA/FlappyBird/FlappyBird.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/alexanderlake/FPGA/FlappyBird/FlappyBird.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace

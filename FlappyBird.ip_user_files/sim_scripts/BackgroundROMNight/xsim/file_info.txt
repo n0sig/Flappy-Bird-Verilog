@@ -1,0 +1,2 @@
+BackgroundROMNight.v,verilog,xil_defaultlib,../../../../FlappyBird.gen/sources_1/ip/BackgroundROMNight/sim/BackgroundROMNight.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,130 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun 28 23:51:55 2021
+# Process ID: 1956
+# Current directory: /home/alexanderlake/Desktop/FlappyBird
+# Command line: vivado /home/alexanderlake/Desktop/FlappyBird/FlappyBird.xpr
+# Log file: /home/alexanderlake/Desktop/FlappyBird/vivado.log
+# Journal file: /home/alexanderlake/Desktop/FlappyBird/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/alexanderlake/Desktop/FlappyBird/FlappyBird.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/yhszj/Desktop/FlappyBird' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'BackgroundROMNight' generated file not found '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/BackgroundROMNight/BackgroundROMNight.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'BackgroundROMNight' generated file not found '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/BackgroundROMNight/BackgroundROMNight_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'BackgroundROMNight' generated file not found '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/BackgroundROMNight/BackgroundROMNight_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'BackgroundROMNight' generated file not found '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/BackgroundROMNight/BackgroundROMNight_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'BackgroundROMNight' generated file not found '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/BackgroundROMNight/BackgroundROMNight_sim_netlist.vhdl'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:05 . Memory (MB): peak = 7325.109 ; gain = 104.109 ; free physical = 10623 ; free virtual = 13579
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_compile_order -fileset sources_1
+generate_target all [get_files  /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/ip/BackgroundROMNight/BackgroundROMNight.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'BackgroundROMNight'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'BackgroundROMNight'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'BackgroundROMNight'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'BackgroundROMNight'...
+generate_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 7512.367 ; gain = 0.000 ; free physical = 10555 ; free virtual = 13567
+catch { config_ip_cache -export [get_ips -all BackgroundROMNight] }
+export_ip_user_files -of_objects [get_files /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/ip/BackgroundROMNight/BackgroundROMNight.xci] -no_script -sync -force -quiet
+launch_runs BackgroundROMNight_synth_1 -jobs 8
+[Mon Jun 28 23:52:56 2021] Launched BackgroundROMNight_synth_1...
+Run output will be captured here: /home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/BackgroundROMNight_synth_1/runme.log
+export_simulation -of_objects [get_files /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/ip/BackgroundROMNight/BackgroundROMNight.xci] -directory /home/alexanderlake/Desktop/FlappyBird/FlappyBird.ip_user_files/sim_scripts -ip_user_files_dir /home/alexanderlake/Desktop/FlappyBird/FlappyBird.ip_user_files -ipstatic_source_dir /home/alexanderlake/Desktop/FlappyBird/FlappyBird.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/alexanderlake/Desktop/FlappyBird/FlappyBird.cache/compile_simlib/modelsim} {questa=/home/alexanderlake/Desktop/FlappyBird/FlappyBird.cache/compile_simlib/questa} {ies=/home/alexanderlake/Desktop/FlappyBird/FlappyBird.cache/compile_simlib/ies} {xcelium=/home/alexanderlake/Desktop/FlappyBird/FlappyBird.cache/compile_simlib/xcelium} {vcs=/home/alexanderlake/Desktop/FlappyBird/FlappyBird.cache/compile_simlib/vcs} {riviera=/home/alexanderlake/Desktop/FlappyBird/FlappyBird.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/ip/HealthROM/HealthROM.xci' is already up-to-date
+[Tue Jun 29 00:13:55 2021] Launched BackgroundROMNight_synth_1, synth_1...
+Run output will be captured here:
+BackgroundROMNight_synth_1: /home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/BackgroundROMNight_synth_1/runme.log
+synth_1: /home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/runme.log
+[Tue Jun 29 00:13:55 2021] Launched impl_1...
+Run output will be captured here: /home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/ip/HealthROM/HealthROM.xci' is already up-to-date
+[Tue Jun 29 00:18:06 2021] Launched BackgroundROMNight_synth_1, synth_1...
+Run output will be captured here:
+BackgroundROMNight_synth_1: /home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/BackgroundROMNight_synth_1/runme.log
+synth_1: /home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/runme.log
+[Tue Jun 29 00:18:06 2021] Launched impl_1...
+Run output will be captured here: /home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/impl_1/runme.log
+add_files -norecurse {/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/uart_tx.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/BackgroundRenderer.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/ControlMux.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/VGADisplay.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/bgm.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/uart_rx.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Logic.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Score.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/clkdiv.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/LayerMixer.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/BonusRenderer.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Pipe.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/DataGenerator.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/PipeRenderer.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/soundeffect.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Ball.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/DeBounce.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Decoder.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Profile.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/data_processing.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/main.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/OverlayRenderer.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Bonus.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/MEMS.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/jump.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Display32Bit.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/clkrim.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/getgoal.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/jumpsound.v /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/InputProcessor.v}
+WARNING: [filemgmt 56-12] File '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/BackgroundRenderer.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/ControlMux.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/VGADisplay.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/uart_rx.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Logic.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Score.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/LayerMixer.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/BonusRenderer.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Pipe.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/DataGenerator.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/PipeRenderer.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Ball.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/DeBounce.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Decoder.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Profile.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/data_processing.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/main.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/OverlayRenderer.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Bonus.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/MEMS.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/Display32Bit.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/InputProcessor.v' cannot be added to the project because it already exists in the project, skipping this file
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/getgoal.v] -no_script -reset -force -quiet
+remove_files  /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/getgoal.v
+export_ip_user_files -of_objects  [get_files /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/jumpsound.v] -no_script -reset -force -quiet
+remove_files  /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/jumpsound.v
+file delete -force /home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/new/jumpsound.v
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/ip/HealthROM/HealthROM.xci' is already up-to-date
+[Tue Jun 29 00:49:02 2021] Launched synth_1...
+Run output will be captured here: /home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/runme.log
+[Tue Jun 29 00:49:02 2021] Launched impl_1...
+Run output will be captured here: /home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/sources_1/ip/HealthROM/HealthROM.xci' is already up-to-date
+[Tue Jun 29 00:52:05 2021] Launched synth_1...
+Run output will be captured here: /home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/synth_1/runme.log
+[Tue Jun 29 00:52:05 2021] Launched impl_1...
+Run output will be captured here: /home/alexanderlake/Desktop/FlappyBird/FlappyBird.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcsg324-1
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/BackgroundROM/BackgroundROM.dcp' for cell 'BackgroundRenderer/nolabel_line60'
+INFO: [Project 1-454] Reading design checkpoint '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/BackgroundROMNight/BackgroundROMNight.dcp' for cell 'BackgroundRenderer/nolabel_line66'
+INFO: [Project 1-454] Reading design checkpoint '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/BirdROM/BirdROM.dcp' for cell 'BirdRenderer/BirdROM'
+INFO: [Project 1-454] Reading design checkpoint '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/SpeedUpROM/SpeedUpROM.dcp' for cell 'BonusRenderer/nolabel_line41'
+INFO: [Project 1-454] Reading design checkpoint '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/HealthROM/HealthROM.dcp' for cell 'BonusRenderer/nolabel_line48'
+INFO: [Project 1-454] Reading design checkpoint '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/LogoROM/LogoROM.dcp' for cell 'OverlayRenderer/LogoROM'
+INFO: [Project 1-454] Reading design checkpoint '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/NumberROM/NumberROM.dcp' for cell 'OverlayRenderer/NumberROM'
+INFO: [Project 1-454] Reading design checkpoint '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/ScoreNumberROM/ScoreNumberROM.dcp' for cell 'OverlayRenderer/ScoreNumberROM'
+INFO: [Project 1-454] Reading design checkpoint '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/ScoreboardROM/ScoreboardROM.dcp' for cell 'OverlayRenderer/ScoreboardROM'
+INFO: [Project 1-454] Reading design checkpoint '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/SettingROM/SettingROM.dcp' for cell 'OverlayRenderer/SettingROM'
+INFO: [Project 1-454] Reading design checkpoint '/home/alexanderlake/Desktop/FlappyBird/FlappyBird.gen/sources_1/ip/PipeROM/PipeROM.dcp' for cell 'PipeRenderer/PipeROM'
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 7728.430 ; gain = 0.000 ; free physical = 9599 ; free virtual = 13175
+INFO: [Netlist 29-17] Analyzing 1468 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [/home/alexanderlake/Desktop/FlappyBird/FlappyBird.srcs/constrs_1/new/constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7728.430 ; gain = 0.000 ; free physical = 9505 ; free virtual = 13080
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 7728.430 ; gain = 0.000 ; free physical = 9368 ; free virtual = 12946
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 29 00:59:44 2021...

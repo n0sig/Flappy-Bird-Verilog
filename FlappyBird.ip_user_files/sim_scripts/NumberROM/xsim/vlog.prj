@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../FlappyBird.gen/sources_1/ip/NumberROM/sim/NumberROM.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

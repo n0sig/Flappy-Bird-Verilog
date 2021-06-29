@@ -1,0 +1,128 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Tue Jun 29 09:14:55 2021
+| Host         : Xiaoxin-Air14-IKBR running 64-bit Arch Linux
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    50 |
+|    Minimum number of control sets                        |    50 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   187 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    50 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |    11 |
+| >= 12 to < 14      |     5 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    22 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             281 |          128 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              85 |           33 |
+| Yes          | No                    | No                     |             226 |           94 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             349 |           97 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------+----------------------------------------+---------------------------------------------------+------------------+----------------+--------------+
+|              Clock Signal             |              Enable Signal             |                  Set/Reset Signal                 | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------------------+----------------------------------------+---------------------------------------------------+------------------+----------------+--------------+
+|  Clk_0                                | VGADisplay/YCount                      | VGADisplay/HSync_i_1_n_0                          |                1 |              1 |         1.00 |
+|  Display32Bit/clk                     |                                        |                                                   |                1 |              2 |         2.00 |
+|  cnt_reg[0]_i_4_n_0                   |                                        |                                                   |                2 |              2 |         1.00 |
+|  uart_rx_valid                        | MEMS/data/button_up_0                  |                                                   |                4 |              4 |         1.00 |
+|  Clk_IBUF_BUFG                        | MEMS/i_uart_rx/next_bit                | MEMS/i_uart_rx/bit_counter[3]_i_1_n_0             |                1 |              4 |         4.00 |
+|  Clk_IBUF_BUFG                        |                                        | bgm/fenpin/count[5]_i_1_n_0                       |                2 |              6 |         3.00 |
+|  Clk_IBUF_BUFG                        |                                        | VGADisplay/RenderState[1]                         |                4 |              6 |         1.50 |
+|  Clk_IBUF_BUFG                        | MEMS/i_uart_rx/uart_rx_data[7]_i_1_n_0 |                                                   |                2 |              8 |         4.00 |
+|  Clk_IBUF_BUFG                        | MEMS/i_uart_rx/recieved_data0          | MEMS/i_uart_rx/recieved_data                      |                2 |              8 |         4.00 |
+|  VSync_OBUF_BUFG                      | MainFSM/State_reg[1]_2[0]              | MainFSM/SS[0]                                     |                3 |              8 |         2.67 |
+|  bgm/cl/CLK                           |                                        |                                                   |                7 |              9 |         1.29 |
+|  VSync_OBUF_BUFG                      | MainFSM/State_reg[2]_9[0]              | MainFSM/State_reg[2]_12                           |                5 |             10 |         2.00 |
+|  VSync_OBUF_BUFG                      | MainFSM/State_reg[2]_4[0]              |                                                   |                3 |             10 |         3.33 |
+|  OverlayRenderer/PrescaledClk_BUFG    |                                        |                                                   |                5 |             10 |         2.00 |
+|  VSync_OBUF_BUFG                      | MainFSM/State_reg[2]_3[0]              |                                                   |                3 |             10 |         3.33 |
+|  VSync_OBUF_BUFG                      | MainFSM/State_reg[0]_0[0]              | MainFSM/SS[0]                                     |                2 |             10 |         5.00 |
+|  VSync_OBUF_BUFG                      | MainFSM/E[0]                           | MainFSM/SS[0]                                     |                3 |             10 |         3.33 |
+|  VSync_OBUF_BUFG                      | MainFSM/State_reg[0]_14                | MainFSM/SS[0]                                     |                4 |             10 |         2.50 |
+|  Clk_IBUF_BUFG                        |                                        | VGADisplay/CurrentScoreNumberROMAddress[10]_i_5_0 |                5 |             11 |         2.20 |
+|  bgm/cl/CLK                           | bgm/key                                |                                                   |               11 |             11 |         1.00 |
+|  Clk_IBUF_BUFG                        | MEMS/i_uart_rx/cycle_counter0          | MEMS/i_uart_rx/next_bit                           |                3 |             11 |         3.67 |
+|  Clk_0                                |                                        |                                                   |                9 |             11 |         1.22 |
+| ~VSync_OBUF_BUFG                      |                                        |                                                   |                5 |             12 |         2.40 |
+|  BackgroundRenderer/PrescaledClk_BUFG |                                        |                                                   |                7 |             12 |         1.71 |
+|  Clk_0                                |                                        | VGADisplay/R[3]_i_1_n_0                           |                3 |             12 |         4.00 |
+|  Clk_IBUF_BUFG                        |                                        | MainFSM/State_reg[1]_3                            |                3 |             13 |         4.33 |
+|  Clk_IBUF_BUFG                        |                                        | Bird/XCount_reg[3]                                |               10 |             13 |         1.30 |
+|  Clk_0                                | VGADisplay/YCount[9]_i_1_n_0           |                                                   |                8 |             14 |         1.75 |
+|  VSync_OBUF_BUFG                      | MainFSM/State_reg[0]_1[0]              |                                                   |                5 |             16 |         3.20 |
+|  VSync_OBUF_BUFG                      | Bonus/SpeedUpRandomizer[15]_i_1_n_0    |                                                   |                5 |             16 |         3.20 |
+|  Clk_IBUF_BUFG                        | uart_rx_valid                          |                                                   |                7 |             16 |         2.29 |
+|  cnt_reg[0]_i_4_n_0                   | bgm/bgm1/cnt[0]_i_1_n_0                |                                                   |                5 |             19 |         3.80 |
+|  cnt_reg[0]_i_4_n_0                   | bgm/nolabel_line51/cnt[0]_i_2_n_0      | bgm/bgm1/beep_reg_reg_0                           |                6 |             19 |         3.17 |
+|  Clk_IBUF_BUFG                        | ButtonProcessor/DeBounce2/count01_out  | ButtonProcessor/DeBounce2/count0                  |                5 |             20 |         4.00 |
+|  Clk_IBUF_BUFG                        | MEMS/data/count01_out_3                | MEMSProcessor/DeBounce4/count0                    |                5 |             20 |         4.00 |
+|  Clk_IBUF_BUFG                        | MEMS/data/count01_out_2                | MEMSProcessor/DeBounce3/count0                    |                5 |             20 |         4.00 |
+|  Clk_IBUF_BUFG                        | MEMS/data/count01_out_1                | MEMSProcessor/DeBounce2/count0                    |                5 |             20 |         4.00 |
+|  Clk_IBUF_BUFG                        | ButtonProcessor/DeBounce1/count01_out  | ButtonProcessor/DeBounce1/count0                  |                5 |             20 |         4.00 |
+|  Clk_IBUF_BUFG                        | MEMS/data/count01_out_0                | MEMSProcessor/DeBounce1/count0                    |                5 |             20 |         4.00 |
+|  Clk_IBUF_BUFG                        | MEMS/data/count01_out                  | MEMSProcessor/DeBounce0/count0                    |                5 |             20 |         4.00 |
+|  Clk_IBUF_BUFG                        | ButtonProcessor/DeBounce4/count01_out  | ButtonProcessor/DeBounce4/count0                  |                5 |             20 |         4.00 |
+|  Clk_IBUF_BUFG                        | ButtonProcessor/DeBounce3/count01_out  | ButtonProcessor/DeBounce3/count0                  |                5 |             20 |         4.00 |
+|  Clk_IBUF_BUFG                        | ButtonProcessor/DeBounce0/count01_out  | ButtonProcessor/DeBounce0/count0                  |                5 |             20 |         4.00 |
+|  Clk_IBUF_BUFG                        |                                        | bgm/cl/count[0]_i_1__0_n_0                        |                6 |             24 |         4.00 |
+|  VSync_OBUF_BUFG                      | MainFSM/State_reg[2]_9[0]              |                                                   |               12 |             32 |         2.67 |
+|  VSync_OBUF_BUFG                      | MainFSM/State_reg[1]_5                 | MainFSM/State_reg[1]_6                            |               17 |             58 |         3.41 |
+|  Clk_IBUF_BUFG                        |                                        |                                                   |               38 |             71 |         1.87 |
+|  VSync_OBUF_BUFG                      |                                        |                                                   |               30 |             71 |         2.37 |
+|  VSync_OBUF_BUFG                      | MainFSM/State_reg[1]_0                 |                                                   |               29 |             80 |         2.76 |
+|  uart_rx_valid                        |                                        |                                                   |               24 |             89 |         3.71 |
++---------------------------------------+----------------------------------------+---------------------------------------------------+------------------+----------------+--------------+
+
+
